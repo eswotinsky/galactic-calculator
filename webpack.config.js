@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-const projectName = "Project-Name";
+const projectName = "Galactic Age Calculator";
 
 module.exports = {
   entry: './src/main.js',
@@ -38,7 +38,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: "eslint-loader"
       },
-      {                         
+      {
         test: /\.js$/,
         exclude: [
           /node_modules/,
