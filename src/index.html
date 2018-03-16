@@ -9,15 +9,34 @@
       <h1>Galactic Age Calculator</h1>
     </div>
 
-    <form id="age-form" action="index.html" method="post">
+    <div class="row">
 
-      <div class="form-group">
-        <label for="enter-birthday">Select your birthday</label>
-        <input id="enter-birthday" type="date" name="enter-birthday">
+      <div class="col-md-6">
+
+
+        <form class="" id="age-form" action="index.html" method="post">
+
+          <div class="form-group">
+            <label for="enter-birthday">Select your birthday:</label>
+            <input class="form-control "id="enter-birthday" type="date" name="enter-birthday">
+          </div>
+
+          <div class="form-group">
+            <label for="enter-life-expectancy">Enter your life expectancy:</label>
+            <input class="form-control" type="number" step="0.1" name="enter-life-expectancy">
+          </div>
+
+
+          <button class="btn btn-info" type="submit" name="button">Find My Galactic Age!</button>
+        </form>
       </div>
 
-      <button class="btn btn-info" type="submit" name="button">Find My Galactic Age!</button>
-    </form>
+      <div id="life-expectancy-info" class="col-md-6">
+        <p><em>Not sure what to enter for your life expectancy?</em></p>
+        <p><a href="https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy" target="_blank">Check out Wikipedia's article on life expectancy by country.</a></p>
+      </div>
+    </div>
+
 
     <div id="results">
 

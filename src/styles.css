@@ -6,3 +6,12 @@
 #results {
   display: none;
 }
+
+label {
+  font-weight: bold;
+}
+
+#life-expectancy-info p {
+  position: relative;
+  top: 50%;
+}
