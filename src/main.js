@@ -9,11 +9,19 @@ $(function() {
   $('#age-form').submit(function(event) {
     event.preventDefault();
     let userBirthday = $('#enter-birthday').val();
-    console.log(userBirthday);
 
     let user = new galacticAge(userBirthday);
     console.log(user.birthday);
-    console.log(user.ageInSeconds(userBirthday));
+    console.log(user.ageInSeconds());
+
+    $('#mercury-age').text(user.convertAge("Mercury"));
+    $('#venus-age').text(user.convertAge("Venus"));
+    $('#earth-age').text(user.convertAge("Earth"));
+    $('#mars-age').text(user.convertAge("Mars"));
+    $('#jupiter-age').text(user.convertAge("Jupiter"));
+    $('#saturn-age').text(user.convertAge("Saturn"));
+    $('#uranus-age').text(user.convertAge("Uranus"));
+    $('#neptune-age').text(user.convertAge("Neptune"));
   })
 
 });
