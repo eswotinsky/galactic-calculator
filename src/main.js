@@ -11,9 +11,7 @@ $(function() {
     let userBirthday = $('#enter-birthday').val();
 
     let user = new galacticAge(userBirthday);
-    console.log(user.birthday);
-    console.log(user.ageInSeconds());
-
+    $('#results').show();
     $('#mercury-age').text(user.convertAge("Mercury"));
     $('#venus-age').text(user.convertAge("Venus"));
     $('#earth-age').text(user.convertAge("Earth"));
