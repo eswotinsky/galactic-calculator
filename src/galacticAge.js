@@ -1,6 +1,5 @@
 export class galacticAge {
 
-
   constructor(birthday, lifeExpectancy) {
     this.birthday = birthday;
     this.lifeExpectancy = lifeExpectancy;
@@ -46,6 +45,44 @@ export class galacticAge {
       console.log("Error determining planet in switch statement");
     }
     return convertedAgeInYears;
+  }
+
+  findLifeExpectancy(planet){
+    let foundLifeExpectancy;
+
+    switch(planet) {
+      case "Mercury":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 0.24);
+      break;
+      case "Venus":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 0.92);
+      break;
+      case "Earth":
+      foundLifeExpectancy = this.lifeExpectancy * (1.00);
+      break;
+      case "Mars":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 1.88);
+      break;
+      case "Jupiter":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 11.86);
+      break;
+      case "Saturn":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 29.48);
+      break;
+      case "Uranus":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 84.07);
+      break;
+      case "Neptune":
+      foundLifeExpectancy = this.lifeExpectancy * (1 / 164.90);
+      break;
+      default:
+      console.log("Error determining life expectancy");
+    }
+    return foundLifeExpectancy.toFixed(2);
+  }
+
+  findRemainingLife(planet) {
+    return (this.findLifeExpectancy(planet) - this.convertAge(planet)).toFixed(2);
   }
 
   isStillAlive(){
