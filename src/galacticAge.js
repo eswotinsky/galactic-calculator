@@ -1,8 +1,9 @@
 export class galacticAge {
 
 
-  constructor(birthday) {
+  constructor(birthday, lifeExpectancy) {
     this.birthday = birthday;
+    this.lifeExpectancy = lifeExpectancy;
   }
 
   ageInSeconds() {
@@ -45,6 +46,11 @@ export class galacticAge {
       console.log("Error determining planet in switch statement");
     }
     return convertedAgeInYears;
+  }
+
+  isStillAlive(){
+    let ageInYears = this.ageInSeconds() / 31536000;
+    return (this.lifeExpectancy > ageInYears);
   }
 
 }
