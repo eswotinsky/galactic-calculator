@@ -1,31 +1,37 @@
-project should:
+# Galactic Age Calculator
 
-    take in an age (years) and convert to seconds
-        (ideally, take in an exact date. perhaps even time of day, if known)
+Ever wonder what your age would be if you lived on one of the other planets in our solar system? Now's your chance to find out!
 
-    given two dates, determine the difference in seconds between them
+This project was completed to satisfy the JavaScript Week 1 Independent Code Review at [Epicodus](https://www.epicodus.com) in Seattle, WA.
 
-    given an age, return age in Mercury years (0.24 Earth years)
+## Setup
 
-    given an age, return age in Venus years (0.62 Earth years)
+1. [Install Node.js and npm](https://www.npmjs.com/get-npm), if not already present in your local environment.
+2. Clone this repository
+3. Within your preferred shell, navigate to the project folder and run the following:
 
-    given an age, return age in Mars years (1.88 Earth years)
+  ```npm install```
+(this may take a moment to complete)
 
-    given an age, return age in Jupiter years (11.86 Earth years)
-
-    given an age and planet, return time left to live (life expectancy minus current age on that planet)
-        (if user has already surpassed life expectancy, return a different output)
-
+  ```npm run start```
 
 
-room for expansion:
+### Technologies Used
 
-    given an age, return age in Saturn years (29.48 Earth years)
+* [Webpack](https://github.com/webpack/webpack) - JavaScript bundler
+* [jQuery](https://github.com/jquery/jquery) - JavaScript library
+* [Bootstrap](https://github.com/twbs/bootstrap) - Responsive design framework for HTML/CSS/JavaScript
 
-    given an age, return age in Uranus years (84.07 Earth years)
+This project was built using [Atom](https://atom.io/) - an open-source, hackable code editor running on the Electron framework
 
-    given an age, return age in Neptune years (164.90 Earth years)
+### Support and Contact Details
+If you encounter any bugs or would like to make suggestions regarding this project, please feel free to open an issue within the repository.
 
-    UI w/ solar theme styling
+**Known issues:**
+* Webpage may not display properly if an invalid input is submitted, e.g. an empty birthdate.
 
-    given an age and planet, return user's next birthday on that planet
+### License
+
+This project is distributed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+Last updated 3/16/2018.
