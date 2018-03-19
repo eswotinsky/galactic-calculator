@@ -27,8 +27,6 @@ This project was built using [Atom](https://atom.io/) - an open-source, hackable
 ### Support and Contact Details
 If you encounter any bugs or would like to make suggestions regarding this project, please feel free to open an issue within the repository.
 
-**Known issues:**
-* Webpage may not display properly if an invalid input is submitted, e.g. an empty birthdate.
 
 ### License
 
