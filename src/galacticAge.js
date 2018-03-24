@@ -14,7 +14,7 @@ export class galacticAge {
   convertAge(planet) {
     const userAgeInSeconds = this.ageInSeconds();
     const secondsInAnEarthYear = 31536000;
-    let convertedAgeInYears = 0;
+    let convertedAgeInYears;
 
     switch(planet) {
       case "Mercury":

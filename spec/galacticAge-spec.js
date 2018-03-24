@@ -26,4 +26,30 @@ describe ('galacticAge', function(){
     expect(testGalacticAge.lifeExpectancy < testGalacticAge.ageInSeconds() / 31536000).toEqual(false)
   })
 
+  it('should test whether convertAge contains a valid return function for each planet in the solar system', function(){
+    expect(testGalacticAge.convertAge('Mercury')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Venus')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Earth')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Mars')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Jupiter')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Saturn')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Uranus')).not.toEqual(undefined)
+    expect(testGalacticAge.convertAge('Neptune')).not.toEqual(undefined)
+  })
+
+  it('should test whether findLifeExpectancy contains a valid return function for each planet in the solar system', function(){
+    expect(testGalacticAge.findLifeExpectancy('Mercury')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Venus')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Earth')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Mars')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Jupiter')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Saturn')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Uranus')).not.toEqual(undefined)
+    expect(testGalacticAge.findLifeExpectancy('Neptune')).not.toEqual(undefined)
+  })
+
+  it('should test whether isStillAlive returns whether lifeExpectancy is greater than user age in years', function(){
+    expect(testGalacticAge.isStillAlive()).toEqual(true)
+  })
+
 });
